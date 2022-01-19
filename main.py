@@ -7,6 +7,14 @@ class Ricecooker:
     Ricecooker.jumlah += 1
     print('jumlah mode ricecooker :' + self.mode)
 
+  @classmethod
+  def getjumlah1(cls):
+    return cls.jumlah
+
+  @staticmethod
+  def getjumlah2():
+    return Ricecooker.jumlah
+
 class TypeRicecooker:
   def __init__(self,temperature):
     self.temperature = temperature
